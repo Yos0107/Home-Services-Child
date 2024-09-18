@@ -1,0 +1,261 @@
+/*!
+Theme Name: Home Services Child
+Theme URI: https://alleythemes.com/home-services/
+Author: alleythemes
+Author URI: https://alleythemes.com/
+Description: Home Services is a feature-rich WordPress theme devoted to home service businesses like Smart Home Installation and Integration, Home Cleaning and Sanitization Services, Home Renovation and Remodeling, Landscaping and Outdoor Services, Home Organization and Decluttering Services, Home Maintenance and Repair, Moving and Storage Services, Home Security Systems Installation and Monitoring, Interior Design and Decoration, Home Energy Efficiency Services, Appliance Repair and Installation, Water Damage Restoration, Plumber and Plumbing Businesses, Pest Control Services, Home Theater Installation, Eco-Friendly and Sustainable Home Services, Home-Based Fitness Services, Virtual Home Consultation Services, Home Automation and Smart Home Integration, Specialized Cleaning Services, Emergency Home Services, HVAC Services, Carpentry Services, Electrical Services,  Personal Concierge Services, Animal Care Services, Mobile Repair and Maintenance Services, and such businesses. 
+
+This theme is designed meticulously for service contractors, home improvement professionals, local business owners. 
+
+Built with a focus on speed and features specific to local businesses, it is responsive, supports cross-browser compatibility, SEO optimized, accessibility-ready, fully customizable. It comes with a modern and functional design, you will get pre-made inner page layouts like About, FAQ, Service, Blog, Contact, Team and Portfolio, Gallery, and other landing pages, CTA blocks, Social Media Section crucial to home service providers business website on theme upgrade. The theme is compatible with page builders like Elementor and others. The theme is extendible with premium addons and is regularly updated.
+
+Version: 1.0.0
+Tested up to: 6.6.2
+Requires PHP: 5.6
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: home-services
+Template: home-services
+Tags: blog, custom-background, custom-colors, custom-header, custom-menu, custom-logo, featured-images, flexible-header, footer-widgets, full-width-template, left-sidebar, one-column, right-sidebar, sticky-post, three-columns, two-columns
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned.
+*/
+
+.primary-hero-section {
+    overflow: hidden;
+}
+
+.primary-hero-section .hero-item {
+    background-color: var(--primary-color);
+    padding-bottom: 60px;
+    overflow: hidden;
+}
+
+.hero-item {
+    display: none;
+}
+
+.hero-item:first-child {
+    display: block;
+}
+
+.primary-hero-section .hero-item>.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.primary-hero-section .caption-holder-wrapper {
+    order: 2;
+}
+
+.primary-hero-section .img-holder-wrapper {
+    position: relative;
+    order: 1;
+}
+
+.primary-hero-section .caption-holder {
+    position: relative;
+    padding: 15px 0;
+    z-index: 2;
+}
+
+.primary-hero-section .caption-holder * {
+    color: #fff;
+}
+
+.primary-hero-section .img-holder {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.primary-hero-section .img-holder img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.primary-hero-section .caption-holder .main-title,
+.primary-hero-section .caption-holder p {
+    margin: 0 0 30px;
+}
+
+.primary-hero-section .caption-holder .button-group .btn {
+    margin: 0 30px 15px 0;
+}
+
+.primary-hero-section .caption-holder .button-group .btn:hover {
+    background-color: var(--dark-color);
+}
+
+.primary-hero-section .caption-holder .call-us {
+    margin-top: 15px;
+}
+
+.primary-hero-section .slick-arrow {
+    width: 35px;
+    height: 35px;
+    background-color: #fff;
+    color: var(--primary-color);
+    border-radius: 50%;
+    border: 1px solid #fff;
+    z-index: 2;
+}
+
+.primary-hero-section .slick-arrow::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: var(--primary-color);
+    font-size: 18px;
+}
+
+.primary-hero-section .slick-arrow:hover,
+.primary-hero-section .slick-arrow:focus {
+    background-color: transparent;
+}
+
+.primary-hero-section .slick-arrow:hover::before,
+.primary-hero-section .slick-arrow:focus::before {
+    color: #fff;
+}
+
+.primary-hero-section .slick-prev {
+    left: 15px;
+}
+
+.primary-hero-section .slick-next {
+    right: 15px;
+}
+
+
+.primary-hero-section .slick-prev::before {
+    content: '\f053';
+}
+
+.primary-hero-section .slick-next::before {
+    content: '\f054';
+}
+
+.primary-hero-section .slick-dots {
+    bottom: 25px;
+}
+
+.primary-hero-section .slick-dots li {
+    background-color: #fff;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+}
+
+.primary-hero-section .slick-dots li.slick-active {
+    background-color: var(--secondary-color);
+}
+
+.primary-hero-section .slick-dots li button {
+    font-size: 0;
+    border: none;
+    width: 0;
+    height: 0;
+    background: none;
+}
+
+.primary-hero-section .slick-dots li button:before {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+
+    .primary-hero-section .hero-item>.container {
+        flex-direction: row;
+    }
+
+
+
+    .primary-hero-section .caption-holder-wrapper,
+    .primary-hero-section .img-holder-wrapper {
+        width: 50%;
+    }
+
+    .primary-hero-section .caption-holder-wrapper {
+        padding-right: 15px;
+    }
+
+    .primary-hero-section .img-holder-wrapper {
+        padding-left: 15px;
+    }
+
+    .primary-hero-section .caption-holder-wrapper {
+        order: 1;
+    }
+
+    .primary-hero-section .img-holder-wrapper {
+        order: 2;
+    }
+
+    .primary-hero-section .img-holder {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100%;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .primary-hero-section .slick-slider .img-holder {
+        width: 50vw;
+    }
+
+    .primary-hero-section .caption-holder-wrapper:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 58ch 70px 0 0;
+        border-color: var(--primary-color) transparent transparent transparent;
+        z-index: 1;
+    }
+
+    .primary-hero-section .caption-holder {
+        padding: 30px 0 70px;
+    }
+
+    .primary-hero-section .hero-item {
+        padding-bottom: 0;
+    }
+
+
+}
+
+@media screen and (min-width: 992px) {
+    .primary-hero-section .caption-holder {
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .primary-hero-section .caption-holder {
+        padding-top: 20%;
+        padding-bottom: 20%;
+    }
+
+    .primary-hero-section .slick-arrow {
+        width: 40px;
+        height: 40px;
+    }
+
+    .primary-hero-section .slick-prev {
+        left: 30px;
+    }
+
+    .primary-hero-section .slick-next {
+        right: 30px;
+    }
+}
